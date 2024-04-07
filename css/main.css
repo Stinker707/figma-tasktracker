@@ -1,0 +1,25 @@
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.header {
+    height: 73px;
+    box-shadow: 0 1px 0 #E5E9F2;
+}
+
+.header-container {
+    display: flex;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.appstore {
+    margin-left: auto;
+}

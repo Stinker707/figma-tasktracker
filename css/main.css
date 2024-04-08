@@ -3,10 +3,13 @@
 }
 
 body {
+    margin: 0;
     font-family: "Manrope", sans-serif;
 }
 
 .header {
+    display: flex;
+    align-items: center;
     height: 73px;
     box-shadow: 0 1px 0 #E5E9F2;
 }
@@ -22,4 +25,8 @@ body {
 
 .appstore {
     margin-left: auto;
+}
+
+.logo {
+    margin-right: 40px;
 }

@@ -4,4 +4,13 @@
 
 body {
     font-family: "Manrope", sans-serif;
+    color: #18191F;
+}
+
+a {
+    color: #18191F;
+}
+
+img {
+    display: block;
 }

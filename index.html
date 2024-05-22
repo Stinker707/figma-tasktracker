@@ -34,7 +34,11 @@
     <header class="header-mobi">
         <div class="header-mobi-container container">
             <div class="logo"><img src="./img/logo.svg" alt="ТаскТрекер"></div>
-            <button class="close-btn">меню</button>
+            <button class="close-btn" id="close-btn">
+                <div class="close-btn-line"></div>
+                <div class="close-btn-line"></div>
+                <div class="close-btn-line"></div>
+            </button>
             <div class="menu-mobi">
                 <nav class="nav">
                     <a class="nav-link" href="#">Приложение</a>
@@ -83,5 +87,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.querySelector('#close-btn')
+        btn.onclick = () => btn.classList.toggle('is-active')
+    </script>
 </body>
 </html>

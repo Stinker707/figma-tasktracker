@@ -26,6 +26,28 @@
     display: none;
 }
 
+.close-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    align-items: stretch;
+}
+
+.close-btn.is-active {
+    --close-btn-line-first-child-display: none;
+}
+
+.close-btn-line {
+    background: #000;
+    height: 2px;
+}
+
+.close-btn-line:first-child {
+    display: var(--close-btn-line-first-child-display);
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;

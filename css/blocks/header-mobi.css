@@ -1,0 +1,28 @@
+.header-mobi {
+    box-shadow: 0 1px 0 #E5E9F2;
+}
+
+.header-mobi__container {
+    display: flex;
+    height: 42px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-mobi__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.header-mobi__menu--is-visible {
+    display: block;
+}
+
+.header-mobi__close-btn {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,5 @@
+.picture__img {
+    object-fit: var(--main-img-object-fit, none);
+    width: 100%;
+    height: 100%;
+}

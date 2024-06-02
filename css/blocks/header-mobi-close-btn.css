@@ -1,0 +1,32 @@
+.header-mobi-close-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+
+.header-mobi-close-btn__line {
+    transition: all linear 0.1s;
+    background: #000;
+    height: 2px;
+    width: 100%;
+}
+
+.header-mobi-close-btn--is-active .header-mobi-close-btn__line:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+}
+
+.header-mobi-close-btn--is-active .header-mobi-close-btn__line:nth-child(2) {
+    display: none;
+}
+
+.header-mobi-close-btn--is-active .header-mobi-close-btn__line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+}
+
+

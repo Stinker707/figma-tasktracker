@@ -7,81 +7,84 @@
     
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="app">
+<body class="page">
 
-    <header class="header-desk">
-        <div class="header-desk-container container">
+    <header class="page__header-desk header-desk">
+        <div class="header-desk__container container">
             <div class="logo"><img src="./img/logo.svg" alt="ТаскТрекер"></div>
-            <nav class="nav">
-                <a class="nav-link" href="#">Приложение</a>
-                <a class="nav-link" href="#">Возможности</a>
-                <a class="nav-link" href="#">Стоимость</a>
-                <a class="nav-link" href="#">Блог</a>
-                <a class="nav-link" href="#">Контакты</a>
+            <nav class="nav-desk">
+                <a class="nav-desk__link" href="#">Приложение</a>
+                <a class="nav-desk__link" href="#">Возможности</a>
+                <a class="nav-desk__link" href="#">Стоимость</a>
+                <a class="nav-desk__link" href="#">Блог</a>
+                <a class="nav-desk__link" href="#">Контакты</a>
             </nav>
-            <div class="store-buttons">
+            <div class="header-desk__store-buttons store-buttons-desk">
                 <a href="#"><img src="./img/store-buttons/app-store-badge.svg" alt="appstore"></a>
                 <a href="#"><img src="./img/store-buttons/google-play-badge.svg" alt="google play"></a>
             </div>
         </div>
     </header>
 
-    <header class="header-mobi">
-        <div class="header-mobi-container container">
+    <header class="page__header-mobi header-mobi">
+        <div class="header-mobi__container container">
             <div class="logo"><img src="./img/logo.svg" alt="ТаскТрекер"></div>
-            <button class="close-btn" id="close-btn">
-                <div class="close-btn-line"></div>
-                <div class="close-btn-line"></div>
-                <div class="close-btn-line"></div>
+            <button class="header-mobi__close-btn header-mobi-close-btn" id="close-btn">
+                <div class="header-mobi-close-btn__line"></div>
+                <div class="header-mobi-close-btn__line"></div>
+                <div class="header-mobi-close-btn__line"></div>
             </button>
-            <div class="header-mobi-menu menu-mobi">
-                <nav class="menu-mobi-nav nav">
-                    <a class="nav-link" href="#">Приложение</a>
-                    <a class="nav-link" href="#">Возможности</a>
-                    <a class="nav-link" href="#">Стоимость</a>
-                    <a class="nav-link" href="#">Блог</a>
-                    <a class="nav-link" href="#">Контакты</a>
-                </nav>
-                <div class="menu-mobi-store-buttons store-buttons">
-                    <a href="#"><img src="./img/store-buttons/app-store-badge.svg" alt="appstore"></a>
-                    <a href="#"><img src="./img/store-buttons/google-play-badge.svg" alt="google play"></a>
+            <div class="header-mobi__menu menu-mobi" id="menu-mobi"> 
+                <div class="menu-mobi__content">
+                    <nav class="nav-mobi">
+                        <a class="nav-mobi__link" href="#">Приложение</a>
+                        <a class="nav-mobi__link" href="#">Возможности</a>
+                        <a class="nav-mobi__link" href="#">Стоимость</a>
+                        <a class="nav-mobi__link" href="#">Блог</a>
+                        <a class="nav-mobi__link" href="#">Контакты</a>
+                    </nav>
+                    <div class="store-buttons-mobi">
+                        <a href="#"><img src="./img/store-buttons/app-store-badge.svg" alt="appstore"></a>
+                        <a href="#"><img src="./img/store-buttons/google-play-badge.svg" alt="google play"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="main">
-        <div class="main-container container">
-            <div class="main-content">
-                <h1 class="main-title">Приложение органайзер</h1>
-                <p class="main-description">Контролируй все свои дела и задачи. Не упускай ничего важного. Заметки, даты и напоминания. Все в одном месте.</p>
-                <a href="#" class="main-button button">Начать пользоваться</a>
+    <main class="page__main main">
+        <div class="main__container container">
+            <div class="main__content">
+                <h1 class="main__title">Приложение органайзер</h1>
+                <p class="main__description">Контролируй все свои дела и задачи. Не упускай ничего важного. Заметки, даты и напоминания. Все в одном месте.</p>
+                <a href="#" class="main__button button">Начать пользоваться</a>
             </div>
-            <div class="main-img-wrap"><img src="./img/mock-creative.png" alt="Шаблон креатива" class="main-img"></div>            
+            <div class="main__picture picture"><img src="./img/mock-creative.png" alt="Шаблон креатива" class="picture__img"></div>            
         </div>
     </main>
+
     <footer class="footer">
-        <div class="footer-container container">
-            <div class="copyright">© 2021 ТаскТрекер. Все права защищены</div>
+        <div class="footer__container container">
+            <div class="footer__copyright">© 2021 ТаскТрекер. Все права защищены</div>
             <div class="social-links">
-                <a href="#" class="social-link">
+                <a href="#" class="social-links__link">
                     <img src="./img/social/instagram.svg" alt="Инстаграмм">
                 </a>
                 
-                <a href="#" class="social-link">
+                <a href="#" class="social-links__link">
                     <img src="./img/social/dribbble.svg" alt="Дрибл">
                 </a>
              
-                <a href="#" class="social-link">
+                <a href="#" class="social-links__link">
                     <img src="./img/social/twitter.svg" alt="Твитер">
                 </a>
 
-                <a href="#" class="social-link">
+                <a href="#" class="social-links__link">
                     <img src="./img/social/youtube.svg" alt="Ютуб">
                 </a>
             </div>
@@ -89,8 +92,12 @@
     </footer>
 
     <script>
-        const btn = document.querySelector('#close-btn')
-        btn.onclick = () => btn.classList.toggle('is-active')
+        const btn = document.querySelector('#close-btn');
+        const menuMobi = document.querySelector('#menu-mobi');
+        btn.onclick = () => {
+            btn.classList.toggle('header-mobi-close-btn--is-active');
+            menuMobi.classList.toggle('header-mobi__menu--is-visible');
+        }
     </script>
 </body>
 </html>

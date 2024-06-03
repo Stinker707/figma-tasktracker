@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТаскТрекер</title>
-    
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"> -->
+    <script src="index.js"></script>
 </head>
 <body class="page">
 
@@ -90,14 +91,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const btn = document.querySelector('#close-btn');
-        const menuMobi = document.querySelector('#menu-mobi');
-        btn.onclick = () => {
-            btn.classList.toggle('header-mobi-close-btn--is-active');
-            menuMobi.classList.toggle('header-mobi__menu--is-visible');
-        }
-    </script>
 </body>
 </html>

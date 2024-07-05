@@ -1,0 +1,10 @@
+.menu-mobi {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: $menu-mobi-content-bg-clr;
+        padding: 15px;
+        box-shadow: 0 0 10px $box-shadow-clr;
+    }
+}

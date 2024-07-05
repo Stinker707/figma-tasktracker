@@ -1,0 +1,23 @@
+.footer {
+    background-color: $footer-bg-clr;
+
+    &__container {
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media (max-width: 768px) {
+            height: 92px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__copyright {
+        color: $footer-copyright-clr;
+        line-height: 24px;
+        font-size: 14px;
+    }
+}

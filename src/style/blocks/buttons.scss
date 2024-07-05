@@ -1,0 +1,14 @@
+.button {
+    background-color: $primary-bg-clr;
+    color: $contrast-primary-bg-clr;
+    border-radius: 8px;
+    padding: 16px 35px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+
+    &:hover{
+        opacity: 0.8;
+        left: 100%;
+    }
+}

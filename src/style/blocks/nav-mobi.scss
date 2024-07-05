@@ -1,0 +1,16 @@
+.nav-mobi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    &__link {
+        font-weight: bold;
+        font-size: 14px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $primary-clr;
+        }
+    }
+}

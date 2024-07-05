@@ -1,0 +1,14 @@
+.nav-desk {
+    display: flex;
+    gap: 32px;
+
+    &__link {
+        font-weight: bold;
+        font-size: 14px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $primary-clr;
+        }
+    }
+}

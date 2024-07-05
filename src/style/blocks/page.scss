@@ -1,0 +1,23 @@
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__header-mobi {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__main {
+        flex: 1;
+    }
+
+    &__header-desk {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}

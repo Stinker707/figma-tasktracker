@@ -1,0 +1,39 @@
+.header-mobi-close-btn {
+    $self: &;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    
+    &--is-active {
+        #{$self} {
+            &__line {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 50%;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    top: 50%;
+                }
+            }
+        }
+    }
+    
+    &__line {
+        transition: all linear 0.1s;
+        background: $header-mobi-close-btn-line-bg-clr;
+        height: 2px;
+        width: 100%;
+    }
+}
+
+

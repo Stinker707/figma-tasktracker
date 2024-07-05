@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <title>ТаскТрекер</title>
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"> -->
-    <script src="index.js"></script>
 </head>
 <body class="page">
-
     <header class="page__header-desk header-desk">
         <div class="header-desk__container container">
-            <div class="logo"><img src="./img/logo.svg" alt="ТаскТрекер"></div>
+            <div class="logo"><img src="img/logo.svg" alt="ТаскТрекер"></div>
             <nav class="nav-desk">
                 <a class="nav-desk__link" href="#">Приложение</a>
                 <a class="nav-desk__link" href="#">Возможности</a>
@@ -26,15 +18,15 @@
                 <a class="nav-desk__link" href="#">Контакты</a>
             </nav>
             <div class="header-desk__store-buttons store-buttons-desk">
-                <a href="#"><img src="./img/store-buttons/app-store-badge.svg" alt="appstore"></a>
-                <a href="#"><img src="./img/store-buttons/google-play-badge.svg" alt="google play"></a>
+                <a href="#"><img src="img/store-buttons/app-store-badge.svg" alt="appstore"></a>
+                <a href="#"><img src="img/store-buttons/google-play-badge.svg" alt="google play"></a>
             </div>
         </div>
     </header>
 
     <header class="page__header-mobi header-mobi">
         <div class="header-mobi__container container">
-            <div class="logo"><img src="./img/logo.svg" alt="ТаскТрекер"></div>
+            <div class="logo"><img src="img/logo.svg" alt="ТаскТрекер"></div>
             <button class="header-mobi__close-btn header-mobi-close-btn" id="close-btn">
                 <div class="header-mobi-close-btn__line"></div>
                 <div class="header-mobi-close-btn__line"></div>
@@ -50,8 +42,8 @@
                         <a class="nav-mobi__link" href="#">Контакты</a>
                     </nav>
                     <div class="store-buttons-mobi">
-                        <a href="#"><img src="./img/store-buttons/app-store-badge.svg" alt="appstore"></a>
-                        <a href="#"><img src="./img/store-buttons/google-play-badge.svg" alt="google play"></a>
+                        <a href="#"><img src="img/store-buttons/app-store-badge.svg" alt="appstore"></a>
+                        <a href="#"><img src="img/store-buttons/google-play-badge.svg" alt="google play"></a>
                     </div>
                 </div>
             </div>
@@ -91,5 +83,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.querySelector('#close-btn');
+        const menuMobi = document.querySelector('#menu-mobi');
+        btn.onclick = () => {
+            btn.classList.toggle('header-mobi-close-btn--is-active');
+            menuMobi.classList.toggle('header-mobi__menu--is-visible');
+        }
+    </script>
 </body>
 </html>

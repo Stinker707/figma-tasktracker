@@ -2,15 +2,14 @@
     background-color: $footer-bg-clr;
 
     &__container {
-        height: 72px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        gap: 10px;
+        padding-top: 19px;
+        padding-bottom: 19px;
 
         @media (max-width: 768px) {
-            height: 92px;
             flex-direction: column-reverse;
         }
     }
